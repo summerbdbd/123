@@ -1,23 +1,13 @@
 <html>
 
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>To-do 목록</th>
-                <th>완료했나요?</th>
-            </tr>
+    <form method="POST">
+        {% csrf_token %} {{ forms.as_p }}
+    </form>
+    {% for todo in todos %}
+    <p>{{ todo.task }} | <a href="{% url 'todo_complete' pk=todo.pk %}">완료</a></p>
+    {% endfor %}
 
-        </thead>
-        {% for todo in todos %}{% if todo.is_done == False %}
-        <thead>
-            <tr>
-                <th>{{todo.task}}</th>
-                <th>{{todo.is_done}}</th>
-            </tr>
-        </thead>
-        {% endif %}{% endfor %}
-    </table>
 </body>
 
 </html>
