@@ -3,7 +3,7 @@ from django.urls import path
 #from home.views import home_view, var_view, nums_view
 #from home.views import home_view
 #from home.views import var_view
-#from home.views import nums_view
+##from home.views import nums_view
 from todo.views import todo_view, todo_inprogress_view, delete_todo, complete_todo
 
 

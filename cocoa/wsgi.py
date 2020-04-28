@@ -1,5 +1,5 @@
 """
-WSGI config for cocoa project.
+WSGI config for cocoa project..
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
