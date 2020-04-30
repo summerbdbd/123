@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from django.contrib import admin
 from django.urls import path
 #from home.views import home_view, var_view, nums_view
@@ -16,24 +15,3 @@ urlpatterns = [
     path('todos/<pk>/delete', delete_todo, name = "todo_del"),
     path('todos/<pk>/complete', complete_todo, name = "todo_complete"),
     ]
-=======
-from django.contrib import admin
-from django.urls import path
-#from home.views import home_view, var_view, nums_view
-#from home.views import home_view
-#from home.views import var_view
-#from home.views import nums_view
-from todo.views import todo_view, todo_inprogress_view, delete_todo, complete_todo
-
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    #path('', home_view),
-    #path('var/',var_view),
-    #path('nums/', nums_view),
-    path("todos/", todo_view, name="todos"),
-    path("todos/in_progress", todo_inprogress_view, name= "in_progress"),
-    path('todos/<pk>/delete', delete_todo, name = "todo_del"),
-    path('todos/<pk>/delete', complete_todo, name = "todo_complete"),
-    ]
->>>>>>> 96796145ca85fd24ac2c9a6571d58d5f330cfb22

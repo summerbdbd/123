@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """
 ASGI config for cocoa project..
 
@@ -15,21 +14,3 @@ from django.core.asgi import get_asgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'cocoa.settings')
 
 application = get_asgi_application()
-=======
-"""
-ASGI config for cocoa project.
-
-It exposes the ASGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/3.0/howto/deployment/asgi/
-"""
-
-import os
-
-from django.core.asgi import get_asgi_application
-
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'cocoa.settings')
-
-application = get_asgi_application()
->>>>>>> 96796145ca85fd24ac2c9a6571d58d5f330cfb22

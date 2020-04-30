@@ -1,5 +1,13 @@
 <!DOCTYPE html>
+{% load static %} 
 <html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">		
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+			<title>Todo list</title>
+		
+		
+	</head>
     <style>
 
     body {
@@ -20,11 +28,22 @@
     
         </style>
 <html>
+    <!-- Header -->
+			<header id="header" class="alt">
+				<div class="inner"> 
+					<h1>Min's To-Do list</h1>
+					<p>Do What you have to Do</p>
+				</div>
+			</header>
+
     <head>
         <title>Todo list</title>
     </head>
 
     <body>
+        <br>
+        <br>
+
         <h1><button type="button" onclick="location.href='http://127.0.0.1:8000/todos' ">나의 첫 Todo site</button></h1>
         
         <p></p>
