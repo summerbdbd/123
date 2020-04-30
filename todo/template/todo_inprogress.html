@@ -1,0 +1,13 @@
+<html>
+
+<body>
+    <form method="POST">
+        {% csrf_token %} {{ forms.as_p }}
+    </form>
+    {% for todo in todos %}
+    <p>{{ todo.task }} | <a href="{% url 'todo_complete' pk=todo.pk %}">완료</a></p>
+    {% endfor %}
+
+</body>
+
+</html>

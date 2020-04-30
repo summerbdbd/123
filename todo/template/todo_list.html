@@ -1,0 +1,13 @@
+<html>
+
+<body>
+        <form method="POST">
+            {% csrf_token %} {{ forms.as_p }}
+            <button type="submit">추가</button> 
+        </form>
+        {% for todo in todos %}
+        <p>{{ todo.task }} | <a href = "{% url 'todo_del' pk=todo.pk %}">삭제</a></p>
+        {% endfor %} 
+</body>
+
+</html>
